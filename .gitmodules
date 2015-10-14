@@ -2,5 +2,6 @@
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
 [submodule "vimified"]
-	path = vimified
-	url = https://github.com/zaiste/vimified.git
+    path = vimified
+    url = ./vimified # set to local repo for the time being
+    #url = https://github.com/zaiste/vimified.git
