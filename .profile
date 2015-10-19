@@ -1,3 +1,1 @@
-if [ -a /bin/zsh ]; then
-    SHELL=/bin/zsh; export SHELL; exec $SHELL;
-fi
+if [ -x /bin/zsh ]; then exec /bin/zsh; fi
