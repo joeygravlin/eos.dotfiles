@@ -19,3 +19,7 @@ antigen theme robbyrussell
 
 # Tell antigen that you're done.
 antigen apply
+
+#################################################
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
