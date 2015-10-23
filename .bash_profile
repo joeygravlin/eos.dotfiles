@@ -1,16 +1,10 @@
 ## .bash_profile
+# Run for interactive Bash login shells
 
 # Source global definitions
 if [ -f /lab/DefaultSetups/bash_profile ]; then
     . /lab/DefaultSetups/bash_profile
 fi
-
-## User specific environment and startup programs
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
-# .bash_profile
-# Run for interactive Bash login shells
 
 # Set umask for more privacy. Child processes inherit the umask from
 # parent processes, so it is correct to put this in the profile, not
