@@ -21,7 +21,5 @@ antigen theme agnoster
 antigen apply
 
 #################################################
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
+# Load aliases
 if [[ -a .aliases ]]; then source .aliases; fi;
