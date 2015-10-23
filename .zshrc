@@ -1,4 +1,4 @@
-source $HOME/dotfiles/antigen/antigen.zsh
+source $HOME/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -23,3 +23,5 @@ antigen apply
 #################################################
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
+
+if [[ -a .aliases ]]; then source .aliases; fi;

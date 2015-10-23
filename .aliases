@@ -1,0 +1,3 @@
+## Some personal aliases
+
+alias gitlog="git log --color --pretty --decorate --graph --abbrev-commit --all --date=relative"
