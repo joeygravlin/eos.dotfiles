@@ -1,3 +1,12 @@
 ## Some personal aliases
 
+# Copy/Pasta
+alias copy="xclip -selection clipboard -in"
+alias paste="xclip -selection clipboard -out"
+
+# Git, Git, Git it gurrrrlll
 alias gitlog="git log --color --pretty --decorate --graph --abbrev-commit --all --date=relative"
+alias gdiff="git diff --color"
+
+# Misc
+alias path-print='echo "${PATH//:/'$'\n''}"'
