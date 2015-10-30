@@ -12,4 +12,4 @@ fi
 if [[ -x /bin/zsh ]]; then /bin/zsh; fi;
 # Otherwise do some stuff
 
-if [[ -a .aliases ]]; then source .aliases; fi;
+if [[ -a $HOME/.aliases ]]; then source $HOME/.aliases; fi;

@@ -5,9 +5,11 @@ antigen use oh-my-zsh
 
 # Bundles from (oh-my-zsh).
 antigen bundle git
-# antigen bundle heroku
+antigen bundle brew
 antigen bundle pip
-# antigen bundle lein
+antigen bundle vagrant
+antigen bundle vundle
+antigen bundle safe-paste
 antigen bundle command-not-found
 
 # Syntax highlighting bundle.
@@ -22,4 +24,4 @@ antigen apply
 
 #################################################
 # Load aliases
-if [[ -a .aliases ]]; then source .aliases; fi;
+if [[ -a $HOME/.aliases ]]; then source $HOME/.aliases; fi;
