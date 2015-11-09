@@ -11,6 +11,9 @@ fi
 # the rc. See <http://en.wikipedia.org/wiki/Umask#Processes>.
 umask u=rwx,g=,o=
 
+# Export virgin state of $PATH
+export PATH_PREV=$PATH
+
 # Prepend a path to a variable if the path exists.
 # $1: the path variable name
 # $2: the path to check and possibly prepend
