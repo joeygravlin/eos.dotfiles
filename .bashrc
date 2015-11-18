@@ -11,8 +11,10 @@ if [ -f  /lab/DefaultSetups/bashrc ]; then
 
 fi
 
-# Test auto launch /bin/zsh
-if [[ -x /bin/zsh ]]; then /bin/zsh; fi;
-# Otherwise do some stuff
-
-if [[ -a $HOME/.aliases ]]; then source $HOME/.aliases; fi;
+## Test auto launch /bin/zsh
+#if [[ -v $PS1 ]]; then
+if [[ $- == *i* ]]; then
+    # interactive
+    if [[ -a $HOME/.aliases ]]; then source $HOME/.aliases; fi;
+    if [[ -x /bin/zsh ]]; then /bin/zsh; fi;
+fi
