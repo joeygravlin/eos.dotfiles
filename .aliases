@@ -11,4 +11,15 @@ alias gitlog='git log --color --pretty --decorate --graph --abbrev-commit --all 
 alias gdiff='git diff --color'
 
 # Misc
-alias path-print='echo "${PATH//:/'$'\n''}"'
+#alias path-print='echo "${PATH//:/'$'\n''}"'
+#alias path-print='echo "$PATH" | sed "s/:/\n/g"'
+
+## f(x)'s
+path-print() {
+    if [[ -n "$1" ]]; then
+        echo "$1" | sed 's/:/\n/g'
+    else
+        echo 'Printing contents of $PATH'
+        echo "$PATH" | sed 's/:/\n/g'
+    fi
+}
