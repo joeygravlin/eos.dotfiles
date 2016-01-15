@@ -16,5 +16,9 @@ fi
 if [[ $- == *i* ]]; then
     # interactive
     if [[ -a $HOME/.aliases ]]; then source $HOME/.aliases; fi;
+    if [[ -a $HOME/.private ]]; then source $HOME/.private; fi;
+    # Launch brewed zsh if available...
+    if [[ -x $HOME/.linuxbrew/bin/zsh ]]; then $HOME/.linuxbrew/bin/zsh; fi;
+    # Else launch system zsh if available.
     if [[ -x /bin/zsh ]]; then /bin/zsh; fi;
 fi
