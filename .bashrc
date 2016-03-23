@@ -1,4 +1,6 @@
 # .bashrc
+# Don't do this! Messes up ssh stuff!
+# echo 'sourced ~/.bashrc'
 
 # User specific aliases and functions
 
@@ -21,4 +23,7 @@ if [[ $- == *i* ]]; then
     if [[ -x $HOME/.linuxbrew/bin/zsh ]]; then $HOME/.linuxbrew/bin/zsh; fi;
     # Else launch system zsh if available.
     if [[ -x /bin/zsh ]]; then /bin/zsh; fi;
+else
+    # FIXME - trying to get unison to work
+    export PATH="$HOME/.linuxbrew/bin:$PATH"
 fi

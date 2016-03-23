@@ -1,6 +1,7 @@
 ## .bash_profile
 # Run for interactive Bash login shells
 
+echo 'sourced ~/.bash_profile'
 # Source global definitions
 if [ -f /lab/DefaultSetups/bash_profile ]; then
     . /lab/DefaultSetups/bash_profile
@@ -44,6 +45,9 @@ export PATH MANPATH INFOPATH
 
 # Set the editor to use when a program needs to edit a file
 export EDITOR='vim'
+
+# Setup android env
+export ANDROID_HOME=/home/gravlinj/.linuxbrew/opt/android-sdk
 
 # Bash doesn't run the .bashrc for login shells -- only .bash_profile.
 # However, we want to run everything in the .bashrc as well.

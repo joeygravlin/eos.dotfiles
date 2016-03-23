@@ -1,3 +1,5 @@
+echo 'sourced ~/.zshrc'
+
 source $HOME/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
